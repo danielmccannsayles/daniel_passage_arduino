@@ -1,3 +1,4 @@
+//assembled by Daniel MS
 
 //Code from Edison
 #include <EEPROM.h>
@@ -27,8 +28,6 @@ int x = 0;
 void loop(void)
 {
   delay(1);
-  
-  
   // Commands: "start", "stop" - can be changed to anything lol
   while (bluetooth.available() >= 4) {
     switch (bluetooth.read()) {
